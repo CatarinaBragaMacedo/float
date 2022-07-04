@@ -1,0 +1,269 @@
+/*-----------BODY----------*/
+
+*{
+    margin: 0;
+    padding: 0 30px 0 30px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI',sans-serif;
+    background-color: var(--color-lightgrey);
+}
+
+:root{
+    --color-green: #74AF0D;
+    --color-darkgreen:#609209;
+    --color-darkgrey: #3A3A3A;
+    --color-grey: #959595;
+    --color-lightgrey:#E5E5E5;
+    --color-white: white;
+    
+}
+
+/*-----------HEADER----------*/
+
+.div-header-link{
+    font-size: 0.8rem;
+    color: var(--color-grey);
+    text-align: center;
+    padding: 30px;
+}
+
+.div-header-link a{
+    color: var(--color-green);
+}
+
+.div-header{
+    background-color: var(--color-green);
+    height: 160px;
+    margin: 0 60px 0 60px;
+}
+
+.div-header-icon{
+    display: flex;
+    position: relative;
+    top: 30%;
+    left: 1%;
+    width:80px;
+    height: 80px;
+}
+
+.div-header-text{
+    display: flex;
+    position: absolute;
+    top:  24%;
+    left: 60%;
+    color: var(--color-white);
+    font-size: 1.6rem;
+    font-weight: lighter;
+}
+
+/*-----------ARTICLE 1----------*/
+
+.div-article-text{
+    color: var(--color-darkgrey);
+    background-color: var(--color-white); 
+    height: 300px;
+    
+}
+
+.div-article-text h3{
+    color: var(--color-darkgrey);
+    font-weight: 400;
+    padding: 80px 100px 20px 100px;
+
+}
+
+.div-article-text p{
+    text-align: left;
+    line-height: 1.4;
+    font-weight: 400;
+    padding-left: 100px ;
+    padding-right: 100px ;
+    padding-bottom: 80px;
+}
+
+/*-----------ICON----------*/
+
+.div-icons{
+    color: var(--color-darkgrey);
+    background-color: var(--color-white);
+    text-align: center;
+    height: 400px;
+}
+
+.div-icons2{
+    display: grid;
+    grid-template-columns: 28% 30% 30%;
+    gap: 5%;
+    width: 100%;
+}
+
+.div-icons h1{
+    font-size: 1.8rem;
+}
+.div-icons h1, h2{
+    font-weight: 400;
+    padding-bottom: 60px;
+}
+.bold{
+    font-weight: bold;
+}
+/*-----------BTN----------*/
+
+.btn{
+    background-color: var(--color-green);
+    color: var(--color-white);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1rem;
+}
+.btn:hover{
+    background-color: var(--color-darkgreen);
+}
+
+/*-----------ARTICLE MAIL----------*/
+
+.div-article-mail{
+    color: var(--color-darkgrey);
+    background-color: var(--color-white);
+    padding-bottom: 40px;
+}
+.break-line{
+    border-color: var(--color-green);
+    border-style: solid none none;
+    border-width: 0.18rem;
+    width: 100%;
+}
+.p-mail{
+    padding-bottom: 20px;
+}
+
+.div-article-mail a{
+    color: var(--color-green);
+}
+
+/*-----------FOOTER----------*/
+
+.div-footer{
+    color: var(--color-grey);
+    background-color: var(--color-white);
+    margin: 0 60px;
+    padding: 40px 30px 20px 30px;
+    line-height: 2;
+    font-size: 0.8rem;
+}
+
+.float-icon-footer{
+    display: flex;
+    position: relative;
+    left: 80%;
+    height: 38px;
+}
+
+
+
+
+
+
+
+/* ================= MEDIA QUERIES (MEDIUM DEVICES) =================== */
+
+@media screen and (max-width: 1024px){
+    /*-----------HEADER----------*/
+    .div-header{
+        background-color: var(--color-green);
+        height: 120px;
+        margin: 0 60px 0 60px;
+    }
+    .div-header-icon{
+        width:40px;
+        height: 40px;
+        top: 30%;
+        right: 2%;
+    }
+    .div-header-text{
+        top:  28%;
+        left: 54%;
+        font-size: 1rem;
+    }
+
+     /*-----------ARTICLE 1----------*/
+     .div-article-text h3{
+        padding: 80px 40px 20px 40px;
+    }
+
+    .div-article-text p{
+        padding-left: 40px ;
+        padding-right: 40px ;
+    }
+
+    /*-----------FOOTER----------*/
+
+    .float-icon-footer{
+        display: flex;
+        position: relative;
+        left: 70%;
+        height: 38px;
+    }
+}
+
+/* ================= MEDIA QUERIES (SMALL DEVICES) =================== */
+@media screen and (max-width: 600px){
+    *{
+        margin: 0;
+        padding: 0 10px 0 10px;
+        box-sizing: border-box;
+    }
+    /*-----------HEADER----------*/
+    .div-header{
+        height: 100px;
+        margin: 0 20px 0 20px;
+    }
+
+    /*-----------ARTICLE 1----------*/
+    .div-article-text h3{
+        padding: 80px 40px 20px 40px;
+    }
+
+    .div-article-text p{
+        padding-left: 40px ;
+        padding-right: 40px ;
+    }
+
+    /*-----------ICON----------*/
+    .div-icons{
+        height: 740px;
+    }
+
+    .div-icons2{
+        grid-template-columns: 1fr;
+        padding-bottom: 40px;
+        gap: 10px;
+    }
+
+    .div-icons h1, h2, p{
+        padding-bottom: 35px;
+    }
+
+    .div-icons h1{
+    font-size: 1.6rem;
+    }
+
+    /*-----------BTN----------*/
+    .btn{
+        margin-bottom: 20px;
+    }
+    /*-----------FOOTER----------*/
+    .div-footer{
+        margin: 0 20px;
+    }
+    .float-icon-footer{
+        display: flex;
+        position: relative;
+        left: 60%;
+        height: 38px;
+    }
+}
